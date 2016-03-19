@@ -1,2 +1,2 @@
 # android
-Android repository containe small works 
+Android repository contains small works 
