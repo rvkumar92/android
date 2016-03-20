@@ -22,7 +22,7 @@ public class LoginPage extends Activity {
         loginView.setText("Welcome !" + userName);
         loginView.setTextColor(Color.GREEN);
         Button back = (Button) findViewById(R.id.back);
-        //back.setText("Back");
+        back.setText("Back");
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
