@@ -4,9 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by root on 21/3/16.
- */
 public class DBOpenHelper extends SQLiteOpenHelper {
 
     //Constants for db name and version
@@ -19,6 +16,9 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     public static final String NOTE_TEXT = "noteText";
     public static final String NOTE_CREATED = "noteCreated";
 
+    public static final String[] ALL_COLUMNS = {
+      NOTE_ID, NOTE_TEXT, NOTE_CREATED
+    };
     //SQL to create table
     private static final String TABLE_CREATE =
             "CREATE TABLE " + TABLE_NOTES + " (" +
